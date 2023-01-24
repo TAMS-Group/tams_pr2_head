@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Start pr2-head modules _on pr2-head machine_ -->
+<launch>
+   <include file="$(find tams_pr2_azure_kinect)/launch/azure_on_pr2.launch" />
+
+   <include file="$(find tams_pr2_neopixel)/launch/pr2_neopixel_eyes_driver.launch" />
+</launch>
+
