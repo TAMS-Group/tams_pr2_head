@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>tams_pr2_head</name>
+  <name>tams_pr2_head_bringup</name>
   <version>0.0.0</version>
   <description>Central launch file on the pr2-head for all components running there.</description>
   <maintainer email="goerner@informatik.uni-hamburg.de">Michael Goerner</maintainer>

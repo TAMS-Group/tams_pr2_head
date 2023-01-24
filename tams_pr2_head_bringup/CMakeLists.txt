@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(tams_pr2_head)
+project(tams_pr2_head_bringup)
 
 find_package(catkin REQUIRED)
 
