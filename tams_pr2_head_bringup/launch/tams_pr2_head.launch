@@ -7,5 +7,11 @@
 
    <!-- NTP monitoring script reports clock sync on diagnostics -->
    <node pkg="pr2_computer_monitor" name="ntp_pr2_head" type="ntp_monitor.py" args="c1 --offset-tolerance 50000 --diag-hostname=pr2-head" />
+
+  <!-- Network monitor -->
+   <node pkg="system_monitor" name="net_pr2_head" type="net_monitor.py" args="--diag-hostname=pr2_head">
+    <param name="net_level_warn" value="0.95" />
+    <rosparam param="ifaces_capacity">{enp0s25: 116.0}</rosparam>
+  </node>
 </launch>
 
