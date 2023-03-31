@@ -4,5 +4,8 @@
    <include file="$(find tams_pr2_azure_kinect)/launch/azure_on_pr2.launch" />
 
    <include file="$(find tams_pr2_neopixel)/launch/pr2_neopixel_eyes_driver.launch" />
+
+   <!-- NTP monitoring script reports clock sync on diagnostics -->
+   <node pkg="pr2_computer_monitor" name="ntp_pr2_head" type="ntp_monitor.py" args="c1 --offset-tolerance 50000 --diag-hostname=pr2-head" />
 </launch>
 
